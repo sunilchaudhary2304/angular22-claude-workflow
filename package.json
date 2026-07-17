@@ -1,0 +1,38 @@
+{
+  "name": "angular22-claude-workflow",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "ng serve --host 0.0.0.0 --port 4200",
+    "build": "ng build",
+    "lint": "echo 'No lint config configured yet'"
+  },
+  "dependencies": {
+    "@angular/animations": "22.0.7",
+    "@angular/common": "22.0.7",
+    "@angular/compiler": "22.0.7",
+    "@angular/core": "22.0.7",
+    "@angular/forms": "22.0.7",
+    "@angular/platform-browser": "22.0.7",
+    "@angular/platform-browser-dynamic": "22.0.7",
+    "@angular/router": "22.0.7",
+    "bootstrap": "5.3.3",
+    "rxjs": "7.8.1",
+    "zone.js": "0.16.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "22.0.7",
+    "@angular/build": "22.0.7",
+    "@angular/cli": "22.0.7",
+    "@angular/compiler-cli": "22.0.7",
+    "typescript": "^6.0.2"
+  },
+  "overrides": {
+    "@angular/core": "22.0.7",
+    "@angular/common": "22.0.7",
+    "@angular/compiler": "22.0.7",
+    "@angular/platform-browser": "22.0.7",
+    "@angular/platform-browser-dynamic": "22.0.7",
+    "@angular/router": "22.0.7"
+  }
+}

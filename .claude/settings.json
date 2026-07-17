@@ -1,0 +1,27 @@
+{
+  "model": "claude-sonnet-4-6",
+  "permissions": {
+    "allow": [
+      "Read(./src/**)",
+      "Read(./package.json)",
+      "Read(./angular.json)",
+      "Read(./tsconfig*.json)",
+      "Write(./src/**)",
+      "Bash(npm start)",
+      "Bash(npm run build)",
+      "Bash(npx tsc --noEmit)"
+    ],
+    "deny": [
+      "Read(./.env*)",
+      "Write(./package-lock.json)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write(./src/**/*.ts)",
+        "command": "npx tsc --noEmit"
+      }
+    ]
+  }
+}
